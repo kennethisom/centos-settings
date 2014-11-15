@@ -50,4 +50,4 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 
 PS1_GIT='$(__git_ps1 " (%s)")'
-PS1="\[$txtwht\][\[$txtcyn\]\u@\h\[$txtwht\] \w\[$bldgrn\]$PS1_GIT\[$txtwht\]]\[$txtred\]\$ \[$txtrst\]"
+PS1="\[$txtrst\][\[$txtcyn\]\u@\h\[$txtrst\] \w\[$bldgrn\]$PS1_GIT\[$txtrst\]]\[$txtred\]\$ \[$txtrst\]"
