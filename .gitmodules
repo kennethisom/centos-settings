@@ -1,3 +1,6 @@
 [submodule "home/user/.vim/bundle/nerdtree"]
 	path = home/user/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "home/user/.vim/bundle/vim-colors-solarized"]
+	path = home/user/.vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git

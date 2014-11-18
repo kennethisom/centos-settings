@@ -9,6 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+TERM=xterm-256color
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
