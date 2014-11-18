@@ -2,8 +2,8 @@ execute pathogen#infect()
 syntax enable
 
 let g:solarized_termcolors=256
-set background=dark
 colorscheme solarized
+set background=dark
 
 set number
 set tabstop=4
