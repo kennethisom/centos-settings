@@ -9,7 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-TERM=xterm-256color
+if [ "$TERM" = xterm ]; then TERM=xterm-256color; fi
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
@@ -52,3 +52,7 @@ GIT_PS1_SHOWDIRTYSTATE=1
 
 PS1_GIT='$(__git_ps1 " (%s)")'
 PS1="\[$txtrst\][\[$txtcyn\]\u@\h\[$txtrst\] \w\[$bldgrn\]$PS1_GIT\[$txtrst\]]\[$txtred\]\$ \[$txtrst\]"
+
+alias grep='grep --color'
+alias la='ls -lA'
+alias tmux='TERM=screen-256color tmux -2'
