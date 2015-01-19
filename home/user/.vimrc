@@ -13,10 +13,6 @@ let g:solarized_termcolors=256
 colorscheme solarized
 set background=dark
 
-let g:django_projects = '~/Projects/django'
-"let g:django_activate_virtualenv = 1 "Try to activate the associated virtualenv
-"let g:django_activate_nerdtree = 1 "Try to open nerdtree at the project root.
-
 set number
 set tabstop=4
 set softtabstop=4
