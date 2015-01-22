@@ -7,3 +7,6 @@
 [submodule "home/user/.vim/bundle/vim-fugitive"]
 	path = home/user/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "home/user/.vim/bundle/django.vim"]
+	path = home/user/.vim/bundle/django.vim
+	url = git@github.com:vim-scripts/django.vim.git

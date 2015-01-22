@@ -56,3 +56,6 @@ PS1="\[$txtrst\][\[$txtcyn\]\u@\h\[$txtrst\] \w\[$bldgrn\]$PS1_GIT\[$txtrst\]]\[
 alias grep='grep --color'
 alias la='ls -lA'
 alias tmux='TERM=screen-256color tmux -2'
+
+#function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+function gi() { wget -q -O - https://www.gitignore.io/api/$@ ;}

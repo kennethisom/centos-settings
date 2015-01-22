@@ -9,9 +9,9 @@ filetype on
 filetype plugin on
 syntax enable
 
-let g:solarized_termcolors=256
-colorscheme solarized
+"let g:solarized_termcolors=256
 set background=dark
+colorscheme solarized
 
 set number
 set tabstop=4
