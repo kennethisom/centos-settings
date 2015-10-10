@@ -9,6 +9,8 @@ filetype on
 filetype plugin on
 syntax enable
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 "let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
@@ -19,11 +21,16 @@ set softtabstop=4
 set shiftwidth=4
 set noautoindent
 set expandtab
+set laststatus=2
+set wildmode=longest,list,full
+set wildmenu
 
 map <C-h> :noh<cr>
 
 map <C-t><up>    :tabl<cr>
 map <C-t><down>  :tabf<cr>
+map <C-t>p       :tabp<cr>
+map <C-t>n       :tabn<cr>
 map <C-t><left>  :tabp<cr>
 map <C-t><right> :tabn<cr>
 
@@ -33,7 +40,7 @@ map <C-t>h :tabp<cr>
 map <C-t>l :tabn<cr>
 
 map <C-t>q :tabc<cr>
-map <C-t>n :tabnew<cr>
+"map <C-t>n :tabnew<cr>
 
 map <C-n> :NERDTreeToggle<cr>
 

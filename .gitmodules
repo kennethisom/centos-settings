@@ -16,3 +16,6 @@
 [submodule "home/user/.vim/bundle/vim-css3-syntax"]
 	path = home/user/.vim/bundle/vim-css3-syntax
 	url = git@github.com:hail2u/vim-css3-syntax.git
+[submodule "home/user/.vim/bundle/vim-airline"]
+	path = home/user/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
