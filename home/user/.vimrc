@@ -21,9 +21,16 @@ set softtabstop=4
 set shiftwidth=4
 set noautoindent
 set expandtab
+set noswapfile
 set laststatus=2
 set wildmode=longest,list,full
 set wildmenu
+
+"set foldmethod=indent
+autocmd FileType apache,xml,html,css,php,cpp,java,python,javascript setlocal foldmethod=indent
+nmap <space> za
+nmap <C-Space> zR
+nmap <C-@> <C-Space>
 
 map <C-h> :noh<cr>
 
@@ -40,7 +47,7 @@ map <C-t>h :tabp<cr>
 map <C-t>l :tabn<cr>
 
 map <C-t>q :tabc<cr>
-"map <C-t>n :tabnew<cr>
+"map <C-t>N :tabnew<cr>
 
 map <C-n> :NERDTreeToggle<cr>
 
