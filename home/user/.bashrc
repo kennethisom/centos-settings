@@ -55,6 +55,9 @@ PS1="\[$txtrst\][\[$txtcyn\]\u@\h\[$txtrst\] \w\[$bldgrn\]$PS1_GIT\[$txtrst\]]\[
 
 alias grep='grep --color'
 alias la='ls -lA'
+alias tree='tree -Chup'
+alias ports='sudo netstat -nlp --protocol=inet'
+alias ssh='ssh -A'
 alias tmux='TERM=screen-256color tmux -2'
 
 #function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
