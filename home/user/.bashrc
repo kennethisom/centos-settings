@@ -53,6 +53,15 @@ GIT_PS1_SHOWDIRTYSTATE=1
 PS1_GIT='$(__git_ps1 " (%s)")'
 PS1="\[$txtrst\][\[$txtcyn\]\u@\h\[$txtrst\] \w\[$bldgrn\]$PS1_GIT\[$txtrst\]]\[$txtred\]\$ \[$txtrst\]"
 
+# Prevent multiple terminal sessions from overwriting bash history
+export HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# Increase the size of bash history
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+
 alias grep='grep --color'
 alias la='ls -lA'
 alias tree='tree -Chup'
