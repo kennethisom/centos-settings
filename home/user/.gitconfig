@@ -6,5 +6,6 @@
     ui = auto
 [alias]
     ignore = "!gi() { ;}; gi"
+    conflicts = "!conflicts() { git diff --name-only --diff-filter=U ;}; conflicts"
 [push]
     default = matching
