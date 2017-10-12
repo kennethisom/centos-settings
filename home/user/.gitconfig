@@ -1,0 +1,10 @@
+[user]
+    name = John Doe
+    email = john@doe.com
+    
+[color]
+    ui = auto
+[alias]
+    ignore = "!gi() { ;}; gi"
+[push]
+    default = matching
